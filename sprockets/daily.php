@@ -9,10 +9,10 @@
     }
     
 ?>
-<?php include 'includes/header.php'?>
+<?php get_header()?>
 <h3><?=$config->pageID?></h3>
     <p>The contents of day is currently: <?=$day?></p>
     <p><a href="?day=Monday">Monday</a></p>
     <p><a href="?day=Tuesday">Tuesday</a></p>
     <p><a href="?day=Wednesday">Wednesday</a></p>
-<?php include 'includes/footer.php'?>
+<?php get_footer()?>

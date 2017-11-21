@@ -1,5 +1,5 @@
 <?php include 'includes/config.php'?>
-<?php include 'includes/header.php'?>
+<?php get_header()?>
 <hr class="divider">
     <h2 class="text-center text-lg text-uppercase my-0"><?=$config->pageID?></strong>
     </h2>
@@ -111,8 +111,9 @@ if (isset($_POST["FirstName"])) {
 
 <?php 
 
-include 'includes/footer.php';
+get_footer()?>
 
+<?php
 function clean_post($key){
     
     if(isset($_POST[$key])){
@@ -139,3 +140,4 @@ function process_post()
     }
     return $myReturn;
 }
+?>
