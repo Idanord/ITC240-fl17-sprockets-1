@@ -50,9 +50,9 @@ switch(THIS_PAGE){
         $config->title = 'Home';
         $config->pageID = 'Home';
     break;
-    case 'customers.php':
-        $config->title = 'Customers';
-        $config->pageID = 'Customers Information';
+    case 'comics.php':
+        $config->title = 'Comics';
+        $config->pageID = 'Comics Information';
     break;
     case 'daily.php':
         $config->title = 'Daily';
