@@ -32,7 +32,12 @@ if (mysqli_num_rows($result) > 0)//at least one record!
 	echo '<div align="center">What! No comics?  There must be a mistake!!</div>';
 }
 
+//START CODE SNIPPET #2 (goes into list page) -------------- 
 
+echo '<img src="' . $config->virtual_path . '/uploads/customer' . dbOut($row['CustomerID']) . '_thumb.jpg" />';
+
+//END CODE SNIPPET #2 (goes into list page) --------------
+        
 
 @mysqli_free_result($result); #releases web server memory
 @mysqli_close($iConn); #close connection to database
